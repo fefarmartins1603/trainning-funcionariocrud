@@ -19,7 +19,13 @@
 			</smartFilterBar:SmartFilterBar>
 
 
-			<smartTable:SmartTable id="LineItemsSmartTable" entitySet="FuncionarioSet" smartFilterId="smartFilterBar" tableType="Table" enableExport="true" beforeExport="onBeforeExport" useVariantManagement="true" useTablePersonalisation="true" header="Line Items" showRowCount="true" persistencyKey="SmartTableAnalytical_Explored" enableAutoBinding="true" class="sapUiResponsiveContentPadding" enableAutoColumnWidth="true" editTogglable="true" app:useSmartToggle="true">
+			<smartTable:SmartTable id="LineItemsSmartTable" entitySet="FuncionarioSet" smartFilterId="smartFilterBar" tableType="ResponsiveTable" enableExport="true" beforeExport="onBeforeExport" useVariantManagement="true" useTablePersonalisation="true" header="{i18n>Dadosfunc}" showRowCount="true" persistencyKey="SmartTableAnalytical_Explored" enableAutoBinding="true" class="sapUiResponsiveContentPadding" enableAutoColumnWidth="true" editTogglable="true" app:useSmartToggle="true">
+				<smartTable:customToolbar>
+				<OverflowToolbar id="_IDGenOverflowToolbar1" >
+				<Button id="_IDGenButton" icon="sap-icon://save">
+				</Button>
+				</OverflowToolbarToolbar>
+				</smartTable:customToolbar>
 				<!-- layout data used to make the table growing but the filter bar fixed -->
 				<smartTable:layoutData>
 					<FlexItemData id="_IDGenFlexItemData1" growFactor="1" baseSize="0%"/>

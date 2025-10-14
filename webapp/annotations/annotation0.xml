@@ -83,7 +83,7 @@
             </Annotations>
 
             <!-- Caso queira anotar um campo individualmente -->
-            <Annotations Target="ZGW_HELLOWORLD00_SRV.Funcionario/SALARY">
+            <Annotations Target="ZGW_HELLOWORLD07_SRV.Funcionario/SALARY">
                 <Annotation Term="Common.Label" String="Salário"/>
             </Annotations>
 
